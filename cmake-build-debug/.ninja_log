@@ -1,0 +1,8 @@
+# ninja log v5
+2	565	7334304105933833	build.ninja	2087af93c360d087
+1	2253	7334300739334724	CMakeFiles/chromakey.dir/main.cpp.obj	1d663a920b60e4b5
+1897	2082	7334298927996202	chromakey.exe	388afd4b78c5a44
+6	2314	7334306408858176	CMakeFiles/chromakey.dir/processImageRGB.cpp.obj	b54c1becf67bf1f9
+1	2318	7334306408908428	CMakeFiles/chromakey.dir/main.cpp.obj	1d663a920b60e4b5
+11	2324	7334306408948306	CMakeFiles/chromakey.dir/processImageHSV.cpp.obj	da678fad90a84752
+2324	2556	7334306410808934	chromakey.exe	8d65035e148b634a
