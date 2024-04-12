@@ -4,6 +4,6 @@
 -- OpenCV STATIC: OFF
 -- Found OpenCV 4.8.0 in C:/tools/opencv/build/x64/vc16/lib
 -- You might need to add C:\tools\opencv\build\x64\vc16\bin to your PATH to be able to run your applications.
--- Configuring done (0.1s)
--- Generating done (0.0s)
+-- Configuring done (0.7s)
+-- Generating done (0.1s)
 -- Build files have been written to: C:/Users/gkave/CLionProjects/OpenCV/cmake-build-debug

@@ -53,4 +53,11 @@ void processImageHSV(const std::string& inputImagePath, const std::string& backg
     std::string outputImagePath = outputDir + fs::path(inputImagePath).filename().string();
     imwrite(outputImagePath, outputImage);
     std::cout << "Image saved as: " << outputImagePath << std::endl;
+
+    // отображение окна с результатом
+    namedWindow("result", WINDOW_AUTOSIZE);
+    moveWindow("result", 500, 250);
+    imshow("result", outputImage);
+    waitKey(0);
+    destroyAllWindows();
 }

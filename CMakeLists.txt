@@ -12,7 +12,11 @@ add_executable(chromakey main.cpp
         processImageRGB.cpp
         processImageHSV.cpp
         processImageRGB.h
-        processImageHSV.h)
+        processImageHSV.h
+        processVideo.cpp
+        processVideo.h
+        addMask.cpp
+        addMask.h)
 
 set(OpenCV_LIBS opencv_core opencv_imgproc opencv_highgui opencv_imgcodecs)
 

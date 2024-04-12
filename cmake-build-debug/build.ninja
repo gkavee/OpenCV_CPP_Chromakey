@@ -73,6 +73,22 @@ build CMakeFiles\chromakey.dir\processImageHSV.cpp.obj: CXX_COMPILER__chromakey_
   TARGET_COMPILE_PDB = CMakeFiles\chromakey.dir\
   TARGET_PDB = chromakey.pdb
 
+build CMakeFiles\chromakey.dir\processVideo.cpp.obj: CXX_COMPILER__chromakey_unscanned_Debug C$:\Users\gkave\CLionProjects\OpenCV\processVideo.cpp || cmake_object_order_depends_target_chromakey
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
+  INCLUDES = -external:IC:\tools\opencv\build\include -external:W0
+  OBJECT_DIR = CMakeFiles\chromakey.dir
+  OBJECT_FILE_DIR = CMakeFiles\chromakey.dir
+  TARGET_COMPILE_PDB = CMakeFiles\chromakey.dir\
+  TARGET_PDB = chromakey.pdb
+
+build CMakeFiles\chromakey.dir\addMask.cpp.obj: CXX_COMPILER__chromakey_unscanned_Debug C$:\Users\gkave\CLionProjects\OpenCV\addMask.cpp || cmake_object_order_depends_target_chromakey
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
+  INCLUDES = -external:IC:\tools\opencv\build\include -external:W0
+  OBJECT_DIR = CMakeFiles\chromakey.dir
+  OBJECT_FILE_DIR = CMakeFiles\chromakey.dir
+  TARGET_COMPILE_PDB = CMakeFiles\chromakey.dir\
+  TARGET_PDB = chromakey.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target chromakey
@@ -81,7 +97,7 @@ build CMakeFiles\chromakey.dir\processImageHSV.cpp.obj: CXX_COMPILER__chromakey_
 #############################################
 # Link the executable chromakey.exe
 
-build chromakey.exe: CXX_EXECUTABLE_LINKER__chromakey_Debug CMakeFiles\chromakey.dir\main.cpp.obj CMakeFiles\chromakey.dir\processImageRGB.cpp.obj CMakeFiles\chromakey.dir\processImageHSV.cpp.obj | C$:\tools\opencv\build\x64\vc16\lib\opencv_world480d.lib C$:\tools\opencv\build\x64\vc16\lib\opencv_world480d.lib C$:\tools\opencv\build\x64\vc16\lib\opencv_world480d.lib C$:\tools\opencv\build\x64\vc16\lib\opencv_world480d.lib
+build chromakey.exe: CXX_EXECUTABLE_LINKER__chromakey_Debug CMakeFiles\chromakey.dir\main.cpp.obj CMakeFiles\chromakey.dir\processImageRGB.cpp.obj CMakeFiles\chromakey.dir\processImageHSV.cpp.obj CMakeFiles\chromakey.dir\processVideo.cpp.obj CMakeFiles\chromakey.dir\addMask.cpp.obj | C$:\tools\opencv\build\x64\vc16\lib\opencv_world480d.lib C$:\tools\opencv\build\x64\vc16\lib\opencv_world480d.lib C$:\tools\opencv\build\x64\vc16\lib\opencv_world480d.lib C$:\tools\opencv\build\x64\vc16\lib\opencv_world480d.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = C:\tools\opencv\build\x64\vc16\lib\opencv_world480d.lib  C:\tools\opencv\build\x64\vc16\lib\opencv_world480d.lib  C:\tools\opencv\build\x64\vc16\lib\opencv_world480d.lib  C:\tools\opencv\build\x64\vc16\lib\opencv_world480d.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

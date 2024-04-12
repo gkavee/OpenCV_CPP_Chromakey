@@ -10,7 +10,8 @@ double calculateDistanceRGB(Vec3b color1, Vec3b color2) {
     return norm(color1 - color2);
 }
 
-void processImageRGB(const std::string& inputImagePath, const std::string& backgroundImagePath, const std::string& outputDir, const Vec3b& chromaKeyColor, int tolerance) {
+void processImageRGB(const std::string& inputImagePath, const std::string& backgroundImagePath, const std::string& outputDir, const Vec3b& chromaKeyColor,
+                     int tolerance) {
     // загрузка входного изображения
     Mat inputImage = imread(inputImagePath, IMREAD_COLOR);
     if (inputImage.empty()) {
@@ -44,4 +45,11 @@ void processImageRGB(const std::string& inputImagePath, const std::string& backg
     std::string outputImagePath = outputDir + fs::path(inputImagePath).filename().string();
     imwrite(outputImagePath, outputImage);
     std::cout << "image saved as: " << outputImagePath;
+
+    // отображение окна с результатом
+    namedWindow("result", WINDOW_AUTOSIZE);
+    moveWindow("result", 500, 250);
+    imshow("result", outputImage);
+    waitKey(0);
+    destroyAllWindows();
 }
