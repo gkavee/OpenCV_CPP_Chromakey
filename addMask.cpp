@@ -30,10 +30,10 @@ void applyFilter(const Mat& inputImage, Mat& outputImage, const string& filterNa
 
     else {
         outputImage = inputImage.clone();
-        Point textOrg((outputImage.cols - 100) / 2, (outputImage.rows) / 2); // координаты верхнего левого угла текста
+        Point textOrg((outputImage.cols - 200) / 2, (outputImage.rows) / 2); // координаты верхнего левого угла текста
         int fontFace = FONT_HERSHEY_SIMPLEX; // шрифт
         Scalar color(0, 0, 255);
-        putText(outputImage, "no filter", textOrg, fontFace, 1, color, 2);
+        putText(outputImage, "no filter", textOrg, fontFace, 2, color, 4);
     }
 }
 
